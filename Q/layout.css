@@ -1,0 +1,96 @@
+/* reset 重置歸零 / 整頁預設 =========== */
+/* *為修改全部預設區 */
+*{
+  margin: 0;
+  padding: 0;
+
+  /* 統一單位,不受不同單位的影響 */
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(239, 239, 232);
+  color: #333;
+}
+
+/* 首頁區域 ======================== */
+header{
+  text-align: center;
+}
+header img{}
+header p{}
+
+/* 導覽列區域 ======================== */
+nav{
+  background-color: #032864;
+  text-align: center;
+}
+nav a{
+  color: white;
+  display: inline-block;
+  background-image: url(./images/btn_hover.png);
+  width: 120px;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  padding-bottom: 7px;
+  padding-top: 5px;
+  text-decoration: none;
+}
+
+nav a span{
+  display: block;
+}
+
+nav a:hover{
+  background-image: url(./images/btn_hover.png);
+}
+
+/* 橫幅圖片區域 ======================== */
+div.banner{
+  background-color: #eee0cd;
+  background-image: url(./images/bg_line.png);
+  background-repeat: repeat-x;
+  background-position: center bottom;
+
+  text-align: center;
+  padding-bottom: 10px;
+}
+div .banner img{
+  display: block;
+  margin: 0 auto;
+}
+
+div .banner p{
+  letter-spacing: 8px;
+}
+
+/* 中央主要內容區域 ======================== */
+main{
+  background-image: url(./images/main_bg.png);
+  min-height: 300px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+main .content{
+  background-color: rgba(0, 122, 255, 0.3);
+  width: 950px;
+  min-height: 400px;
+  float: left;
+}
+
+main aside{
+  background: rgba(255, 1, 233, 0.3);
+  width: 250px;
+  min-height: 200px;
+  float: right;
+}
+
+/* 頁尾區域 ======================== */
+footer{
+  background-image: url(./images/bg_line.png);
+  background-repeat: repeat-x;
+  text-align: center;
+  padding: 20px;
+  font-size: 13px;
+}

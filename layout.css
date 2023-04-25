@@ -1,0 +1,159 @@
+/* reset 重置歸零 / 整頁預設 ============= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f5f3ed;
+  color: #333;
+}
+
+
+/* 頁首區域 ====================== */
+header {
+  text-align: center;
+}
+
+header p {
+  letter-spacing: 8px;
+  padding-bottom: 5px;
+}
+
+
+/* 導覽列區域 ====================== */
+nav {
+  background-color: #032864;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 17px;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  width: 120px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  background-image: url(./images/btn_hover.png);
+}
+
+nav a.active {
+  background-image: url(./images/btn_hover.png);
+  color: #ffdf97;
+  font-size: 18px;
+}
+
+nav a span {
+  display: block;
+}
+
+
+/* 橫幅圖片區域 ==================== */
+div.banner {
+  background-color: #eedcca;
+  background-image: url(./images/bg_line.png);
+  background-repeat: repeat-x;
+  background-position: center bottom;
+
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+div.banner img {
+  /* display: block; 方法一 */
+  /* margin: 0 auto; 方法二 */
+
+  /* 以下方法二 */
+  /* 左右垂直置中, 只適用在display:inline的物件 */
+  vertical-align: middle;
+}
+
+
+
+/* 中央主要內容區域 ==================== */
+main {
+  background-image: url(./images/main_bg.png);
+  /*height: 300px;   固定高度*/
+  /* min-height: 300px;  最小高度*/
+  max-width: 1200px;
+  margin: 0 auto;
+  /* overflow: auto; */
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.content {
+  /* background-color: rgba(0, 0, 255, 0.5); */
+  width: 950px;
+  float: left;
+  padding: 30px 20px;
+  position: relative;
+}
+
+h1 {
+  background-image: url(./images/h1bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.new {
+  width: 150px;
+  height: auto;
+  float: right;
+  position: absolute;
+  right: 20%;
+  top: 100px;
+}
+
+.card {
+  width: 70%;
+}
+
+.mlauto {
+  margin-left: auto;
+  display: block;
+}
+
+
+aside {
+  /* background-color: rgba(212, 0, 255, 0.5); */
+  width: 250px;
+  float: right;
+  padding: 30px 15px;
+}
+
+h2 {
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+aside img {
+  width: 100%;
+  height: auto;
+}
+
+.TSimg {
+  margin-bottom: 10px;
+  border: 5px solid white;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+}
+
+
+/* 頁尾區域 ====================== */
+footer {
+  background-image: url(./images/bg_line.png);
+  background-repeat: repeat-x;
+  text-align: center;
+  padding: 1.5em;
+}
